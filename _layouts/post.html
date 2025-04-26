@@ -54,13 +54,6 @@ post_class: post-template
 <!-- Comments if not disabled with comments: false -->
 {% include comments.html %}
 
-<!-- Share -->
-{% include share.html %}
-
-<!-- Related Post -->
-{% include related-posts.html %}
-
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
 {% if page.rating %}
@@ -85,3 +78,9 @@ https://search.google.com/structured-data/testing-tool/u/0/
     }
     </script>
 {% endif %}
+
+
+<div style="width: 250px; padding: 20px; border-left: 6px solid #007BFF; border-radius: 8px; background: #f5f5f5; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: left; font-family: Arial, sans-serif; color: #333;">
+  <p style="font-size: 14px; color: #555; margin: 0 0 5px 0;">Post a cura di</p>
+  <p style="font-size: 18px; font-weight: bold; color: #222; margin: 0;">Redazione GMJ</p>
+</div>
